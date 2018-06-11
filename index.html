@@ -31,7 +31,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Start Bootstrap</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/aditya.jpg" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -185,10 +185,8 @@
 <a target="_blank" href="https://github.com/adityarasam/Projects/tree/master/AutonomousNavigation">Design of a Robotic Computer Vision System for Autonomous Navigation</a>
               </h3>
               <p>
-Implemented VINS-Mono algorithms, separately, for an Arial robot blimp for mapping a construction site. 
-Used NVIDIA Jetson TX1 development board and monocular camera with an IMU for localizing and mapping the surrounding which
-used Point Cloud Library (PCL) and Robot Operating System (ROS). 
-Co-ordinated with Hardware and Context Awareness teams to integrate their work to develop a fully functional working prototype. <!--The reports can be found <a target="_blank" href="https://github.com/suraj-maniyar/Monocular-SLAM-AutonomousNavigation-ECE592/tree/master/Reports">here.</a>  -->
+The goal of this project was to create two autonomous vehicles, one ground and other aerial to map and navigate certain environments, like construction sites, autonomously. The aerial vehicle which in our case happened to be an RC blimp enhanced the autonomous navigation task by providing an aerial view of the site to the ground vehicle (HUSKY) which earlier only relied on the stereo vision mounted on it. While performing this task the aerial blimp also had to autonomously navigate the environment based on the Visual-Inertial odometry data that it estimated from the Inertial and monocular vision sensors onboard. The development of the aerial blimp was segregated in three parts, Hardware interfacing, SLAM and Context Awareness. I contributed by assisting the developemnt of the sensor interfacing and control algorithm development of the aerial blimp and implementation of Visual Intertial SLAM (VINS-MONO). 
+The sensor integration and control algorithm were developed on a light weight yet powerful enough single board computers like Raspberry Pi 3 while we implemented complex algorithm like VINS-MONO slam on NVIDIA Jetson TX1. We developed ROS packages for interfacing the sensors and implementation of the control algorithm which allowed the Raspberry Pi and NVIDIA Jetson to share data over ros topics. <!--The reports can be found <a target="_blank" href="https://github.com/suraj-maniyar/Monocular-SLAM-AutonomousNavigation-ECE592/tree/master/Reports">here.</a>  -->
               </p>
             </div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL4x48NKK0iYWvQU-8ztyqgRjddYEyaaz_" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
