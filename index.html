@@ -330,13 +330,21 @@ With such industrial as well as my educational background I am earnestly searchi
 <a target="_blank" href="https://github.com/adityarasam/Projects/tree/master/AutonomousNavigation">Design of a Robotic Computer Vision System for Autonomous Navigation</a>
               </h3>
               <p>
-The goal of this project was to create two autonomous vehicles, one ground and other aerial to map and navigate certain environments, like construction sites, autonomously. The aerial vehicle which in our case happened to be an RC blimp enhanced the autonomous navigation task by providing an aerial view of the site to the ground vehicle (HUSKY) which earlier only relied on the stereo vision mounted on it. While performing this task the aerial blimp also had to autonomously navigate the environment based on the Visual-Inertial odometry data that it estimated from the Inertial and monocular vision sensors onboard. The development of the aerial blimp was segregated in three parts, Hardware interfacing, SLAM and Context Awareness. I contributed by assisting the developemnt of the sensor interfacing and control algorithm development of the aerial blimp and implementation of Visual Intertial SLAM (VINS-MONO). 
-The sensor integration and control algorithm were developed on a light weight yet powerful single board computers like Raspberry Pi 3 while we implemented complex algorithm like VINS-MONO slam on NVIDIA Jetson TX1. We developed ROS packages for interfacing the sensors and implementation of the control algorithm which allowed the Raspberry Pi and NVIDIA Jetson to share data over ros topics. 
+The goal of this project was to create two autonomous vehicles, one ground and other aerial to map and navigate certain environments, like construction sites, autonomously. The aerial vehicle which in our case happened to be an RC blimp enhanced the autonomous navigation task by providing an aerial view of the site to the ground vehicle (HUSKY) which earlier only relied on the stereo vision mounted on it. While performing this task the aerial blimp also had to autonomously navigate the environment based on the Visual-Inertial odometry data that it estimated from the Inertial and monocular vision sensors onboard. The development of the aerial blimp was segregated in three parts, Hardware interfacing and firware/driver development, SLAM and Context Awareness. I contributed by assisting the developemnt of the sensor interfacing/ firmware development and control algorithm development of the aerial blimp and implementation of Visual Intertial SLAM (VINS-MONO). 
+The sensor firmware development and control algorithm were developed on a light weight yet powerful single board computers like Raspberry Pi 3 while we implemented complex algorithm like VINS-MONO slam on NVIDIA Jetson TX1. All the development was made using ROS package structure which allowed the Raspberry Pi and NVIDIA Jetson to share data over ros topics. 
               </p>
 
             </div>
     
           </div>
+
+	<div>
+		
+		<p style="text-align:center;"><img  src="img/VINSMONO.png" alt="" style="width:750px;height:450px;">       <img  src="img/SysOverview.png" alt="" style="width:900px;height:450px;"></p>
+
+	</div>
+
+
 	<p style="text-align:center;">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLrGyv9mxvpMkyz3b2zIHdBARc9yUb8EbV" frameborder="0" allow="autoplay; encrypted-media" 			allowfullscreen>
     	</iframe>
