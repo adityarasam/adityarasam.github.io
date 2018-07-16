@@ -462,20 +462,22 @@ In this project, I implemented a script that given an image of a any box with 3 
 
 
 
-<!-- =====================Feature detection and Matching================ -->
+<!-- =====================Feature detection, Matching and Epipolar Geometry================ -->
 	<div class="resume-item d-flex flex-column flex-md-row mb-5"  style="padding-top:60px" >
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
                 <a target="_blank" href="https://github.com/adityarasam/Projects/tree/master/DigImageProcess/arasam_project02">Feature detection and Matching</a>
               </h3>
               <p>
-In this project, I implemented a script that given two images of an object in a scene taken from different location and orientation, first detects the SIFT features in the two images and then matches them in the two images.
+In this project, primarily, I implemented a script that given two images of an object in a scene taken from different location and orientation, first detects the SIFT features in the two images and then matches them in the two images. Secondly, with these features using the 8-point algorithm I calculated the Fundamental matrix. Using the fundamental matrix epipolar lines were estimated and drawn in the images as shown below.
               </p>
             </div>
           </div>
 	<div>
 		
 		<p style="text-align:center;"><img  src="img/featurematch.png" alt="" style="width:1060px;height:400px;" class=""> </p>
+
+		<p style="text-align:center;"><img  src="img/EpipolarLines.png" alt="" style="width:1060px;height:400px;" class=""> </p>
 
 	</div>
 	
