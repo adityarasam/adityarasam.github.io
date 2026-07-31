@@ -640,8 +640,27 @@
 <a target="_blank" href="https://github.com/adityarasam/Projects/tree/master/AutonomousNavigation">Design of a Robotic Computer Vision System for Autonomous Navigation</a>
               </h3>
               <p>
-The goal of this project was to create two autonomous vehicles, one ground and other aerial to map and navigate certain environments, like construction sites, autonomously. The aerial vehicle which in our case happened to be an RC blimp enhanced the autonomous navigation task by providing an aerial view of the site to the ground vehicle (HUSKY) which earlier only relied on the stereo vision mounted on it. While performing this task the aerial blimp also had to autonomously navigate the environment based on the Visual-Inertial odometry data that it estimated from the Inertial and monocular vision sensors onboard. The development of the aerial blimp was segregated in three parts, Hardware interfacing and firware/driver development, SLAM and Context Awareness. I contributed by assisting the developemnt of the sensor interfacing/ firmware development and control algorithm development of the aerial blimp and implementation of Visual Intertial SLAM (VINS-MONO). 
-The sensor firmware development and control algorithm were developed on a light weight yet powerful single board computers like Raspberry Pi 3 while we implemented complex algorithm like VINS-MONO slam on NVIDIA Jetson TX1. All the development was made using ROS package structure which allowed the Raspberry Pi and NVIDIA Jetson to share data over ros topics. 
+                At North Carolina State University (NCSU), this multi-semester Robotics Computer Vision project focuses on developing a collaborative multi-agent autonomous system designed to map and navigate challenging environments like construction sites. While previous cohorts established a ground-based Autonomous Mobile Robot (AMR)—the Clearpath Husky—the objective for this batch was to prototype and develop a complementary Aerial Robot.
+              </p>
+              <p>
+                Rather than deploying a conventional quadcopter, the team engineered an RC blimp to explore long-endurance aerial surveillance capabilities. This aerial agent enhances the system's overall navigation task by providing an aerial bird's-eye view to the Husky, which previously relied solely on its onboard stereo vision. This collaborative setup allows the ground vehicle to navigate complex zones and survey areas otherwise inaccessible from the ground.
+              </p>
+              <p>
+      The autonomous system utilized a distributed, heterogeneous hardware architecture orchestrated via a ROS (Robot Operating System) package framework, allowing separate computing boards to seamlessly share data over active ROS topics:
+    </p>
+
+    <ul>
+      <li><strong>Low-Level module:</strong> Raspberry Pi 3 on the RC blimp to manage sensor nodes interfacing, peripheral hardware drivers, and the control algorithms.</li>
+      <li><strong>High-Level Perception:</strong> NVIDIA Jetson TX1 to process heavy vision pipelines and visual-inertial odometry via VINS-Mono.</li>
+      <li><strong>Core Contributions:</strong> Co-developed the multi-modal sensor interfacing nodes, tuned the blimp's motor control loops, and successfully implemented and tuned the VINS-Mono package for tracking.</li>
+    </ul>
+
+
+              <p>
+<!-- The goal of this project was to create two autonomous vehicles, one ground and other aerial to map and navigate certain environments, like construction sites, autonomously. The aerial vehicle which in our case happened to be an RC blimp enhanced the autonomous navigation task by providing an aerial view of the site to the ground vehicle (HUSKY) which earlier only relied on the stereo vision mounted on it. While performing this task the aerial blimp also had to autonomously navigate the environment based on the Visual-Inertial odometry data that it estimated from the Inertial and monocular vision sensors onboard. The development of the aerial blimp was segregated in three parts, Hardware interfacing and firware/driver development, SLAM and Context Awareness. I contributed by assisting the developemnt of the sensor interfacing/ firmware development and control algorithm development of the aerial blimp and implementation of Visual Intertial SLAM (VINS-MONO).  -->
+<!-- At NCSU this is a multi-semester project for Robotics Computer Vision where every semester a new batch contributes. While this project already had a ground AMR(Husky), the goal for my batch was prototyping and development of an Aerial Robot thats remotely tracked and controlled by the AMR to help survelliance of areas in accessible to ground vehicle. Instead of using a conventional drone the plan was to build a RC blimp to explore the possibilities. -->
+
+<!-- The sensor firmware development and control algorithm were developed on a light weight yet powerful single board computers like Raspberry Pi 3 while we implemented complex algorithm like VINS-MONO slam on NVIDIA Jetson TX1. All the development was made using ROS package structure which allowed the Raspberry Pi and NVIDIA Jetson to share data over ros topics.  -->
               </p>
 
             </div>
